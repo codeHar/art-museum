@@ -1,0 +1,28 @@
+
+<form>
+    <mat-form-field appearance="fill" style="width:80%">
+        <mat-label>Image Title</mat-label>
+        <input matInput placeholder="your image title">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" style="width:80%">
+        <mat-label>Image Url</mat-label>
+        <input matInput placeholder="your image url">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" style="width:80%">
+        <mat-label>Created By</mat-label>
+        <input matInput placeholder="artist name">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Category</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let category of categories" [value]="category">
+            {{category}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit">Upload</button>
+</form>

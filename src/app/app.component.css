@@ -1,0 +1,5 @@
+.content-div{
+    width:100%;
+    min-height: 85vh;
+    background-color: var(--secondary-color);
+}
